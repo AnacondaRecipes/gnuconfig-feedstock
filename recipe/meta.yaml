@@ -1,13 +1,15 @@
 {% set name = "gnuconfig" %}
-{% set version = "2020.11.07" %}
+{% set version = "2021.05.24" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
+  # Updated to the latest version of the package where the version number is the date of the commit.
+  # The git_rev is the commit hash.
   git_url: https://git.savannah.gnu.org/r/config.git
-  git_rev: 77632d92f25e26b95c64afd3700d51bd03587613
+  git_rev: 4550d2f15b3a7ce2451c1f29500b9339430c877f
 
 build:
   noarch: generic
