@@ -1,0 +1,5 @@
+anaconda_config_version: 1
+upstream_sources:
+  - git:
+      identifier: https://git.savannah.gnu.org/r/config.git
+      use_commit: true
